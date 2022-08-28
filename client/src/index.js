@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+    //removed <React.StrictMode> because it was causing errors i.e. TypeError: Cannot read properties of undefined (reading 'dispose')
     <App />
 );
 
