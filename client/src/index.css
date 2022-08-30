@@ -1,4 +1,8 @@
-body {
+:root {
+  --blue: #2596be;
+}
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +14,90 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+.title {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 36px;
+}
+
+.title:hover {
+  color: var(--blue);
+}
+
+.title.active {
+  color: var(--blue);
+}
+
+.link {
+  padding-top: 20px;
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.link:hover {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.link.active {
+  color: var(--blue);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section {
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--blue);
+  padding: 25px;
+  color: #fff;
+  width: 80%;
+}
+
+.footer {
+  background-color: var(--blue);
+  color: #fff;
+  font-size: 32px;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact {
+  background-color: var(--blue);
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+.blank {
+  padding: 70px;
+  background-color: #fff;
+}
+
+button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  background-color: #000;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button[disabled] {
+  cursor: default;
+  opacity: 0.8;
 }

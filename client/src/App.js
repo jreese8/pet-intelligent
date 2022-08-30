@@ -14,13 +14,14 @@ import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Detail from './pages/Detail';
 import Navigation from './components/Nav/Navigation';
-import Contact from './components/Contact/Contact';
+import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import NoMatch from './pages/NoMatch';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
+import Footer from './components/Footer/Footer';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -86,6 +87,7 @@ function App() {
                 element={<NoMatch />} 
               />
             </Routes>
+            <Footer />
           </StoreProvider>
         </div>
       </Router>

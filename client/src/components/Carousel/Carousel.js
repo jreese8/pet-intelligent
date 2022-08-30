@@ -8,10 +8,11 @@ import dogcat3Img from "../../assets/dogncat3.png";
 
 function FadeCarousel() {
   return (
+  <div className="">
     <Carousel fade>
       <Carousel.Item>
         <img
-          className="d-block w-100 h-50"
+          className="w-100"
           src={dogcatImg}
           alt="Dog with cat."
         />
@@ -19,7 +20,7 @@ function FadeCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 h-50"
+          className="w-100"
           src={dogcat2Img}
           alt="Dog with cat."
         />
@@ -27,13 +28,14 @@ function FadeCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 h-50"
+          className="w-100"
           src={dogcat3Img}
           alt="Dog with cat."
         />
 
       </Carousel.Item>
     </Carousel>
+  </div>
   );
 }
 

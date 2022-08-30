@@ -1,96 +1,104 @@
 import React from 'react';
-import { Nav, NavItem } from 'reactstrap';
+import { Nav } from 'reactstrap';
 import Auth from "../../utils/auth";
 import { Link } from 'react-router-dom';
 import logoImg from "../../assets/logo.png";
 
-const tabs = [
-  {
-    route: "/",
-    label: "Home",
-  },
-  {
-    route: "/shop",
-    label: "Shop",
-  },
-  {
-    route: "/contact",
-    label: "Contact",
-  },
-];
-
 function Navigation() {
 
-  function showNavigation() {
+  // function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/orderHistory">
-              Order History
+
+      <nav className="navbar navbar-light" role="navigation">
+        <Nav className="w-100">
+          <div className="d-flex justify-content-around w-100">
+
+            <Link className="title" to="/">
+              <img
+              src={logoImg}
+              alt="Pet Intelligent"
+              width="25%"
+            />
+            Pet Intelligent
             </Link>
-          </li>
-          <li className="mx-1">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
-          </li>
-        </ul>
-      );
-    } else 
-    {
+
+            <Link className='link' to="/">
+              Home
+            </Link>
+
+            <Link className='link' to="/shop">
+              Shop
+            </Link>
+
+            <Link className='link' to="/contact">
+              Contact
+            </Link>
+
+            <ul className="pt-2">
+              <li>
+                <Link className='link' to="/orderHistory">
+                  Order History
+                </Link>
+              </li>
+
+              <li>
+                {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+                <a href="/" onClick={() => Auth.logout()}>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </Nav>
+      </nav>
+    );
+    } else {
+
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/signup">
-              Signup
+      <nav className="navbar navbar-light" role="navigation">
+        <Nav className="w-100">
+          <div className="d-flex justify-content-around w-100">
+
+            <Link className="title" to="/">
+              <img
+              src={logoImg}
+              alt="Pet Intelligent"
+              width="25%"
+            />
+              Pet Intelligent
             </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/login">
-              Login
+
+            <Link className='link' to="/">
+              Home
             </Link>
-          </li>
-        </ul>
+
+            <Link className='link' to="/shop">
+              Shop
+            </Link>
+
+            <Link className='link' to="/contact">
+              Contact
+            </Link>
+
+            <ul className='pt-2'>
+              <li>
+                <Link className='link' to="/signup">
+                  Signup
+                </Link>
+              </li>
+
+              <li>
+                <Link className='link' to="/login">
+                  Login
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </Nav>
+      </nav>
       );
     }
   }
-
-  return (
-    <nav className="tab-nav navbar navbar-light" role="navigation">
-      <Nav className="w-100">
-        <div className="d-flex flex-row justify-content-around w-100">
-          {tabs.map((tab, index) => (
-            <NavItem key={`tab-${index}`}>
-              <Link
-                to={tab.route}
-                className="nav-link"
-                activeClassName="active"
-              >
-                <div className="row d-flex flex-column justify-content-center align-items-center">
-                  <div>{tab.label}</div>
-                </div>
-              </Link>
-            </NavItem>
-          ))}
-        </div>
-      </Nav>
-
-      <header>
-        <Link to="/">
-        <img
-          src={logoImg}
-          alt="Pet Intelligent"
-        />
-        </Link>
-      </header>
-
-      <nav>
-        {showNavigation()}
-      </nav>
-  </nav>
-  );
-}
 
 export default Navigation;
