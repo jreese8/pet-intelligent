@@ -33,7 +33,7 @@ db.once('open', async () => {
         "Give your cat an entree so good she'll think it's people food with Purina Friskies Pate Country Style Dinner wet cat food. The savory chicken flavor brings classic yummy goodness to her dish, and the smooth pate pleases her palate from her first bite to her very last nibble. The aroma of this Purina Friskies pate canned cat food lets her know that something truly delicious awaits her at mealtime.",
       image: 'friskies.jpg',
       category: categories[0]._id,
-      price: 0.76,
+      price: 1.00,
       quantity: 750
     },
     {

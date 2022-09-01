@@ -13,10 +13,11 @@ function Home() {
     <div>
       <FadeCarousel />
         <h1 className="text-center pt-5">About Us</h1>
-        <h4 className="section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id nibh lectus. Aenean feugiat, libero ut convallis vestibulum, mi nibh posuere lectus, a sodales metus neque sit amet tortor. Integer blandit quam et leo scelerisque tristique. 
-        <br/>
-        <br/>
-        Donec ac lobortis eros. Aliquam malesuada venenatis efficitur. Fusce suscipit ullamcorper libero vitae egestas. Ut id magna non nunc vehicula auctor. Sed nec dolor ut purus varius malesuada. Proin commodo, nulla at imperdiet vehicula, sem erat bibendum felis, id gravida velit ex ac magna.</h4>
+        <h4 className="section"> Pet Intelligent is a local pet retailer with a variety of products geared towards pets and their families. At Pet Intelligent, we love pets, and we believe pets make us better people! Every day with every connection, Pet Intelligent's passionate associates help bring pet parents closer to their pets so they, together, can live more fulfilled lives.
+          <br/>
+          <br/>
+          This vision impacts everything we do for our customers, the way we support our associates and how we give back to our communities. Shop online or visit our store using the map below. We look forward to serving you and your precious pets!
+        </h4>
         <Map location={location} zoomLevel={15} />
     </div>
   )

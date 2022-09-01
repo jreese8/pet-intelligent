@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
-import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
 
@@ -30,22 +29,22 @@ function Login(props) {
   };
 
   return (
-    <div className="container my-1">
-      <Link to="/signup">←Signup</Link>
+  <div>
+    <div className="manyForms">
 
       <h2>Login</h2>
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+        <div className="pt-3">
           <label htmlFor="email">Email address:</label>
           <input
-            placeholder="youremail@test.com"
+            placeholder="youremail@email.com"
             name="email"
             type="email"
             id="email"
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="pt-3">
           <label htmlFor="pwd">Password:</label>
           <input
             placeholder="******"
@@ -60,11 +59,17 @@ function Login(props) {
             <p className="error-text">Incorrect credentials.</p>
           </div>
         ) : null}
-        <div className="flex-row flex-end">
+        <div className="pt-3">
           <button type="submit">Submit</button>
         </div>
       </form>
     </div>
+
+    <div className='blank'>
+      <h1></h1>
+    </div>
+
+  </div>
   );
 }
 

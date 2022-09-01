@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
@@ -31,12 +30,12 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
-      <Link to="/login">← Login</Link>
+    <div>
+    <div className="manyForms">
 
       <h2>Signup</h2>
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+        <div className="pt-3">
           <label htmlFor="firstName">First Name:</label>
           <input
             placeholder="First"
@@ -46,7 +45,7 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="pt-3">
           <label htmlFor="lastName">Last Name:</label>
           <input
             placeholder="Last"
@@ -56,17 +55,17 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="pt-3">
           <label htmlFor="email">Email:</label>
           <input
-            placeholder="youremail@test.com"
+            placeholder="youremail@email.com"
             name="email"
             type="email"
             id="email"
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="pt-3">
           <label htmlFor="pwd">Password:</label>
           <input
             placeholder="******"
@@ -76,10 +75,16 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row flex-end">
+        <div className="pt-3">
           <button type="submit">Submit</button>
         </div>
       </form>
+      </div>
+
+      <div className='blank'>
+        <h1></h1>
+      </div>
+
     </div>
   );
 }
