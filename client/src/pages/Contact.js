@@ -1,90 +1,34 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../utils/helpers';
+import React from 'react';
 import fbImg from '../assets/facebook.png';
 import twitImg from '../assets/twitter.png';
 import instaImg from '../assets/instagram.png';
 import linkImg from '../assets/linkedIn.png';
 
 function ContactForm() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
-  };
-
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
-  };
-
   return (
     <div>
-      <div className="manyForms">
+      <div class="manyForms">
+          <h1>Contact Us</h1>
+  
+          <form target="_blank" action="https://formsubmit.co/905dfbcbc473117283581859ec676ab6" method="POST">
 
-        <h2>Contact Us</h2>
-        <form id="contact-form" onSubmit={handleSubmit}>
+                <div className="pt-3">
+                  <input type="text" name="name" className="form-control" placeholder="Your Name" required/>
+                </div>
+        
+                <div className="pt-3">
+                  <input type="email" name="email" className="form-control" placeholder="Email Address" required/>
+                </div>
 
-        <div className="pt-3">
-          <label htmlFor="name">Name:</label>
-          <input
-            placeholder="Your Name:"
-            name="Name"
-            type="text"
-            defaultValue={name}
-            onBlur={handleChange}
-          />
-        </div>
-      
-        <div className="pt-3">
-          <label htmlFor="email">Email:</label>
-          <input
-            placeholder="youremail@email.com"
-            name="email"
-            type="email"
-            defaultValue={email}
-            onBlur={handleChange}
-          />
-        </div>
+            <div className="pt-3">
+              <textarea placeholder="Your Message" className="form-control" name="message" rows="10" required></textarea>
+            </div>
 
-        <div className="pt-3">
-          <label htmlFor="message">Message:</label>
-          <input
-            placeholder="Your Message Here:"
-            name="message"
-            rows="5"
-            defaultValue={message}
-            onBlur={handleChange}
-          />
-        </div>
+            <div className="pt-3">
+              <button type="submit">Submit</button>
+            </div>
 
-        <div className="pt-3">
-          <button type="submit">Submit</button>
-        </div>
-
-        </form>
-
+          </form>
       </div>
 
       <div className='social'>

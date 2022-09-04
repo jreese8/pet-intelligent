@@ -75,7 +75,6 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         [close]
       </div>
-      <h2>Shopping Cart</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -88,12 +87,12 @@ const Cart = () => {
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
             ) : (
-              <span>(log in to check out)</span>
+              <span>(Log in to check out)</span>
             )}
           </div>
         </div>
       ) : (
-        <h3>
+        <h3 className='p-3 text'>
           Nothing in cart.
         </h3>
       )}

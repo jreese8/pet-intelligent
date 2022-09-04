@@ -35,22 +35,22 @@ function Login(props) {
       <h2>Login</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="pt-3">
-          <label htmlFor="email">Email address:</label>
           <input
             placeholder="youremail@email.com"
             name="email"
             type="email"
             id="email"
+            className="form-control"
             onChange={handleChange}
           />
         </div>
         <div className="pt-3">
-          <label htmlFor="pwd">Password:</label>
           <input
             placeholder="******"
             name="password"
             type="password"
             id="pwd"
+            className="form-control"
             onChange={handleChange}
           />
         </div>
@@ -65,9 +65,14 @@ function Login(props) {
       </form>
     </div>
 
-    <div className='blank'>
-      <h1></h1>
-    </div>
+    <hr className='blank'>
+    </hr>
+
+    <hr className='break'>
+    </hr>
+
+    <hr className='blank'>
+    </hr>
 
   </div>
   );

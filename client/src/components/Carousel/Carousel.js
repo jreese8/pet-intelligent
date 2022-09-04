@@ -8,7 +8,7 @@ import dogcat3Img from "../../assets/dogncat3.png";
 
 function FadeCarousel() {
   return (
-  <div className="">
+  <div>
     <Carousel fade>
       <Carousel.Item>
         <img

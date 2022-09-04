@@ -33,45 +33,45 @@ function Signup(props) {
     <div>
     <div className="manyForms">
 
-      <h2>Signup</h2>
+      <h1>Signup</h1>
       <form onSubmit={handleFormSubmit}>
         <div className="pt-3">
-          <label htmlFor="firstName">First Name:</label>
           <input
-            placeholder="First"
+            placeholder="First Name"
             name="firstName"
             type="firstName"
             id="firstName"
+            className="form-control"
             onChange={handleChange}
           />
         </div>
         <div className="pt-3">
-          <label htmlFor="lastName">Last Name:</label>
           <input
-            placeholder="Last"
+            placeholder="Last Name"
             name="lastName"
             type="lastName"
             id="lastName"
+            className="form-control"
             onChange={handleChange}
           />
         </div>
         <div className="pt-3">
-          <label htmlFor="email">Email:</label>
           <input
             placeholder="youremail@email.com"
             name="email"
             type="email"
             id="email"
+            className="form-control"
             onChange={handleChange}
           />
         </div>
         <div className="pt-3">
-          <label htmlFor="pwd">Password:</label>
           <input
             placeholder="******"
             name="password"
             type="password"
             id="pwd"
+            className="form-control"
             onChange={handleChange}
           />
         </div>
@@ -81,9 +81,14 @@ function Signup(props) {
       </form>
       </div>
 
-      <div className='blank'>
-        <h1></h1>
-      </div>
+      <hr className='blank'>
+      </hr>
+
+      <hr className='break'>
+      </hr>
+
+      <hr className='blank'>
+      </hr>
 
     </div>
   );

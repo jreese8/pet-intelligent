@@ -2,7 +2,7 @@
   --blue: #2596be;
 }
 
-/* body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,11 +10,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} */
+}
 
 .title {
   font-weight: bold;
@@ -67,6 +66,9 @@ ul {
   font-size: 32px;
   padding: 40px;
   text-align: center;
+  position: relative; 
+  bottom: 0; 
+  width: 100%
 }
 
 .manyForms {
@@ -76,20 +78,29 @@ ul {
   padding: 50px;
 }
 
+.break {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  border: #fff;
+  padding: 50px;
+}
+
 .blank {
-  padding: 70px;
+  padding: 10px;
   background-color: #fff;
+  border-color: #fff;
 }
 
 button {
-  font-size: 1rem;
+  font-size: 15px;
   text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
   background-color: #000;
   color: #fff;
 }
@@ -98,6 +109,11 @@ button:hover {
   color: var(--blue);
   background-color: #fff;
   font-weight: bold;
+  border: 1px solid var(--blue);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 button[disabled] {
@@ -113,4 +129,14 @@ button[disabled] {
 
 .socialMedia:hover {
   opacity: 0.5;
+}
+
+.text {
+  color: var(--blue);
+}
+
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
