@@ -7,7 +7,7 @@ import linkImg from '../assets/linkedIn.png';
 function ContactForm() {
   return (
     <div>
-      <div class="manyForms">
+      <div className="manyForms">
           <h1>Contact Us</h1>
   
           <form target="_blank" action="https://formsubmit.co/905dfbcbc473117283581859ec676ab6" method="POST">
