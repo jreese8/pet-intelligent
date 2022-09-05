@@ -140,3 +140,43 @@ button[disabled] {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+@media screen and (max-width: 1030px) {
+  .link {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .link {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+  
+  .socialMedia {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .link {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .section {
+    font-size: 15px;
+  }
+}

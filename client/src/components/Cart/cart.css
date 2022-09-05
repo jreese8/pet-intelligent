@@ -72,3 +72,15 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (max-width: 410px) {
+  .cart {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .cart {
+    font-size: 8px;
+  }
+}
