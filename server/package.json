@@ -1,8 +1,16 @@
 {
   "name": "pet-intelligent",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "",
   "main": "server.js",
-  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon",
+    "seed": "node config/seeds.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@iconify/icons-mdi": "^1.2.29",
@@ -33,28 +41,5 @@
     "stripe": "^10.6.0",
     "watch": "^1.0.2",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon",
-    "seed": "node config/seeds.js"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
