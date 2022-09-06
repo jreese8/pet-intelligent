@@ -1,5 +1,4 @@
 {
-  "homepage": "http://jreese8.github.io/pet-intelligent",
   "name": "pet-intelligent",
   "version": "0.1.0",
   "private": true,
@@ -59,7 +58,6 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^7.3.0",
-    "gh-pages": "^4.0.0"
+    "concurrently": "^7.3.0"
   }
 }
