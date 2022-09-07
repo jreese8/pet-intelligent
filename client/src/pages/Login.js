@@ -32,7 +32,7 @@ function Login(props) {
   <div>
     <div className="manyForms">
 
-      <h2>Login</h2>
+      <h1>Login</h1>
       <form onSubmit={handleFormSubmit}>
         <div className="pt-3">
           <input
