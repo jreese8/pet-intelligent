@@ -44,7 +44,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div>
           <StoreProvider>
             <Navigation />
