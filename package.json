@@ -17,6 +17,6 @@
     "concurrently": "^7.3.0"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "cjs-loader": "^0.1.0"
   }
 }
