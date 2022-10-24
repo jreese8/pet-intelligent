@@ -11,7 +11,8 @@
   
 
   ## Website
-  TBA
+   https://still-sierra-23156.herokuapp.com/
+   *Shop feature TBA
 
 
   ## Screenshot
