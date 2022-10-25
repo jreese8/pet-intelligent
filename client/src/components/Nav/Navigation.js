@@ -35,9 +35,9 @@ function Navigation() {
               Contact
             </Link>
 
-            <ul className="pt-2">
+            <ul>
               <li>
-                <Link className='link' to="/orderHistory">
+                <Link className='link pb-2' to="/orderHistory">
                   Order History
                 </Link>
               </li>
@@ -81,7 +81,7 @@ function Navigation() {
               Contact
             </Link>
 
-            <ul className='pt-2'>
+            <ul>
               <li>
                 <Link className='link' to="/signup">
                   Signup

@@ -141,6 +141,10 @@ button[disabled] {
   justify-content: space-around;
 }
 
+li{
+  margin: 10px 0;
+}
+
 @media screen and (max-width: 1030px) {
   .link {
     font-size: 16px;
