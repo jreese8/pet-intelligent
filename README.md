@@ -11,7 +11,7 @@
   
 
   ## Website
-   https://still-sierra-23156.herokuapp.com/
+   https://pet-intelligent.onrender.com
    *Shop feature TBA
 
 
